@@ -9,65 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     /* ---------- GLOBAL + NAVBAR ---------- */
-
-
-    .why-section {
-      max-width: 1100px;
-      margin: 40px auto 20px;
-      text-align: center;
-      padding: 20px;
-    }
-
-
-    .why-title {
-      font-size: 34px;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-
-
-    .why-subtext {
-      color: #6b7280;
-      max-width: 720px;
-      margin: auto;
-      font-size: 17px;
-    }
-
-
-    .why-grid {
-      margin-top: 34px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-
-    .why-card {
-      background: white;
-      padding: 20px;
-      border-radius: 14px;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-      text-align: left;
-    }
-
-
-    .why-card h3 {
-      margin: 0 0 8px;
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-
-    .why-card p {
-      margin: 0;
-      color: #6b7280;
-      font-size: 14px;
-    }
-
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -430,6 +375,73 @@
         grid-template-columns: 1fr
       }
     }
+
+    /* WHY CHOOSE NEURAX SECTION */
+    .why-choose {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .why-choose h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .why-choose h2 span {
+      color: #6c3cff;
+      /* your theme color */
+    }
+
+    /* Container */
+    .why-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 0 20px;
+    }
+
+    /* Card */
+    .why-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+    }
+
+    .why-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Icon */
+    .why-card .icon {
+      font-size: 40px;
+      color: #6c3cff;
+      /* icon color */
+      margin-bottom: 15px;
+    }
+
+    /* Headings */
+    .why-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    /* Paragraph */
+    .why-card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      .why-choose h2 {
+        font-size: 28px;
+      }
+    }
   </style>
 </head>
 
@@ -445,40 +457,39 @@
   </nav>
 
 
+  <!-- WHY CHOOSE NEURAX SECTION -->
+  <section class="why-choose">
+    <h2>Why Choose <span>NeuraX</span>?</h2>
 
+    <div class="why-container">
 
-  <!-- WHY CHOOSE SECTION (Added Above the Form) -->
-  <section class="why-section">
-    <h2 class="why-title">Why Choose NeuraX</h2>
-    <p class="why-subtext">We bridge the gap between cutting‑edge AI research and real‑world applications, delivering
-      solutions that transform businesses and empower the next generation of AI professionals.</p>
-
-
-    <div class="why-grid">
       <div class="why-card">
+        <div class="icon"><i class="fa-solid fa-user-gear"></i></div>
         <h3>Expert Team</h3>
-        <p>PhD‑level AI researchers and industry veterans delivering world‑class expertise in every project.</p>
+        <p>Highly skilled professionals delivering top-notch digital solutions.</p>
       </div>
 
-
       <div class="why-card">
+        <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
         <h3>Proven Results</h3>
-        <p>Over 500+ successful AI projects across 15+ industries with measurable business impact.</p>
+        <p>We consistently achieve measurable success for our clients.</p>
       </div>
-
 
       <div class="why-card">
-        <h3>Innovation Focus</h3>
-        <p>Leveraging breakthrough AI technologies to deliver forward‑thinking solutions tailored to your needs.</p>
+        <div class="icon"><i class="fa-solid fa-rocket"></i></div>
+        <h3>Innovation First</h3>
+        <p>We use modern technologies to keep your business ahead.</p>
       </div>
-
 
       <div class="why-card">
-        <h3>Custom Solutions</h3>
-        <p>Tailored AI strategies built around your business goals and challenges.</p>
+        <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Customized Solutions</h3>
+        <p>Tailored strategies designed for your unique needs.</p>
       </div>
+
     </div>
   </section>
+
   <!-- CONTACT PAGE CONTENT -->
   <div class="container">
 
