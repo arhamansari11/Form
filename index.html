@@ -12,6 +12,62 @@
 
   <style>
     /* ---------- GLOBAL + NAVBAR ---------- */
+
+
+    .why-section {
+      max-width: 1100px;
+      margin: 40px auto 20px;
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    .why-title {
+      font-size: 34px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+
+    .why-subtext {
+      color: #6b7280;
+      max-width: 720px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+
+    .why-grid {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+
+    .why-card {
+      background: white;
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      text-align: left;
+    }
+
+
+    .why-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+
+    .why-card p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -388,6 +444,41 @@
     </ul>
   </nav>
 
+
+
+
+  <!-- WHY CHOOSE SECTION (Added Above the Form) -->
+  <section class="why-section">
+    <h2 class="why-title">Why Choose NeuraX</h2>
+    <p class="why-subtext">We bridge the gap between cutting‑edge AI research and real‑world applications, delivering
+      solutions that transform businesses and empower the next generation of AI professionals.</p>
+
+
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Expert Team</h3>
+        <p>PhD‑level AI researchers and industry veterans delivering world‑class expertise in every project.</p>
+      </div>
+
+
+      <div class="why-card">
+        <h3>Proven Results</h3>
+        <p>Over 500+ successful AI projects across 15+ industries with measurable business impact.</p>
+      </div>
+
+
+      <div class="why-card">
+        <h3>Innovation Focus</h3>
+        <p>Leveraging breakthrough AI technologies to deliver forward‑thinking solutions tailored to your needs.</p>
+      </div>
+
+
+      <div class="why-card">
+        <h3>Custom Solutions</h3>
+        <p>Tailored AI strategies built around your business goals and challenges.</p>
+      </div>
+    </div>
+  </section>
   <!-- CONTACT PAGE CONTENT -->
   <div class="container">
 
@@ -467,7 +558,7 @@
       </p>
 
 
-  
+
 
       <!-- Subject -->
       <div style="margin-top: 16px;">
@@ -523,7 +614,92 @@
   ">
         Send Message
       </button>
+
+
+      <!-- Contact Information Section -->
+      <div style="
+  margin-top: 30px;
+  padding: 24px;
+  border-radius: 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+">
+
+        <h2 style="font-size: 22px; margin-bottom: 14px;">Contact Information</h2>
+
+        <!-- Email -->
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+          <i class="fa-solid fa-envelope" style="font-size: 20px; color: #0052cc;"></i>
+          <span style="font-size: 15px; font-weight: 500;">support@panaversity.org</span>
+        </div>
+
+        <!-- Address -->
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+          <i class="fa-solid fa-location-dot" style="font-size: 20px; color: #0052cc;"></i>
+          <span style="font-size: 15px; font-weight: 500;">Virtual Campus, Panaversity</span>
+        </div>
+
+        <!-- Subscribe -->
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+          <i class="fa-solid fa-bell" style="font-size: 20px; color: #0052cc;"></i>
+          <a href="#" style="font-size: 15px; font-weight: 600; text-decoration: none; color: #0052cc;">
+            Subscribe For Latest AI News
+          </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div>
+          <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 10px;">Our Socials</h3>
+
+          <div style="display: flex; gap: 14px;">
+            <a href="#" style="
+        width: 40px; height: 40px; 
+        display: flex; align-items: center; justify-content: center;
+        border-radius: 50%; background: #ffffff;
+        border: 1px solid #e5e7eb; 
+        font-size: 18px; color: #111;
+      ">
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#" style="
+        width: 40px; height: 40px;
+        display: flex; align-items: center; justify-content: center;
+        border-radius: 50%; background: #ffffff;
+        border: 1px solid #e5e7eb;
+        font-size: 18px; color: #111;
+      ">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" style="
+        width: 40px; height: 40px;
+        display: flex; align-items: center; justify-content: center;
+        border-radius: 50%; background: #ffffff;
+        border: 1px solid #e5e7eb;
+        font-size: 18px; color: #111;
+      ">
+              <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="#" style="
+        width: 40px; height: 40px;
+        display: flex; align-items: center; justify-content: center;
+        border-radius: 50%; background: #ffffff;
+        border: 1px solid #e5e7eb;
+        font-size: 18px; color: #111;
+      ">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Contact Information Section -->
+
     </div>
+
+
 
     </main>
   </div>
