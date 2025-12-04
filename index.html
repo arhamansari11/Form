@@ -442,23 +442,23 @@
         font-size: 28px;
       }
     }
-.center {
-  text-align: center;
-  color: #6c3cff;
-  padding-top: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-.centere {
-  text-align: center;
-  color: #6c3cff;
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  line-height: 1.5;
-}
+    .center {
+      text-align: center;
+      color: #6c3cff;
+      padding-top: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
+    .centere {
+      text-align: center;
+      color: #6c3cff;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
   </style>
 </head>
 
@@ -477,7 +477,8 @@
     Join the Movement to Shape Every Child’s Future
   </h1>
   <h2 class="centere">
-    We’re bridging the gap between those who care and those who need help. Whether you’re a teacher, parent, donor or student  your support matters.
+    We’re bridging the gap between those who care and those who need help. Whether you’re a teacher, parent, donor or
+    student your support matters.
   </h2>
 
   <!-- WHY CHOOSE NEURAX SECTION -->
@@ -489,25 +490,29 @@
       <div class="why-card">
         <div class="icon"><i class="fa-solid fa-user-gear"></i></div>
         <h3>Teachers & Educators</h3>
-        <p>Join us to share your skills, inspire young learners and help build a future where every child has access to quality education.</p>
+        <p>Join us to share your skills, inspire young learners and help build a future where every child has access to
+          quality education.</p>
       </div>
 
       <div class="why-card">
         <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
         <h3>Parents & Guardians</h3>
-        <p>Be the voice of your child or community — let us know how we can support you, and help create pathways for change at home and beyond.</p>
+        <p>Be the voice of your child or community — let us know how we can support you, and help create pathways for
+          change at home and beyond.</p>
       </div>
 
       <div class="why-card">
         <div class="icon"><i class="fa-solid fa-rocket"></i></div>
         <h3>NGOs & Community Groups</h3>
-        <p>Partner with us to deliver resources, run programmes or extend support in underserved areas — together we can create meaningful impact.</p>
+        <p>Partner with us to deliver resources, run programmes or extend support in underserved areas — together we can
+          create meaningful impact.</p>
       </div>
 
       <div class="why-card">
         <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
         <h3>Donors & Volunteers</h3>
-        <p>Whether you give your time, funds or expertise, your involvement opens doors for children and youth who are currently left behind.</p>
+        <p>Whether you give your time, funds or expertise, your involvement opens doors for children and youth who are
+          currently left behind.</p>
       </div>
 
     </div>
@@ -555,7 +560,7 @@
       <div style="display: flex; gap: 16px; margin-bottom: 18px;">
         <div style="flex: 1;">
           <label>Name *</label>
-          <input type="text" placeholder="Your Name" style="
+          <input type="text" id="name" placeholder="Your Name" style="
         width: 100%; padding: 12px; border: 1px solid #e5e7eb;
         border-radius: 8px; margin-top: 6px;
       ">
@@ -563,7 +568,7 @@
 
         <div style="flex: 1;">
           <label>Email *</label>
-          <input type="email" placeholder="your@email.com" style="
+          <input type="email" id="email" placeholder="your@email.com" style="
         width: 100%; padding: 12px; border: 1px solid #e5e7eb;
         border-radius: 8px; margin-top: 6px;
       ">
@@ -578,7 +583,9 @@
     width: 100%; padding: 12px;
     border: 1px solid #e5e7eb; border-radius: 8px;
     margin-top: 6px;
-  ">
+  "
+  id="category"
+  >
           <option value="">-- Select a category --</option>
           <option value="teachers">Teachers</option>
           <option value="parents">Parents</option>
@@ -597,7 +604,7 @@
       <!-- Subject -->
       <div style="margin-top: 16px;">
         <label>Subject *</label>
-        <input type="text" placeholder="Subject" style="
+        <input type="text" id="subject" placeholder="Subject" style="
       width: 100%; padding: 12px; border: 1px solid #e5e7eb;
       border-radius: 8px; margin-top: 6px;
     ">
@@ -606,7 +613,7 @@
       <!-- Message -->
       <div style="margin-top: 16px;">
         <label>Message *</label>
-        <textarea placeholder="Your message" style="
+        <textarea placeholder="Your message" id="message" style="
       width: 100%; padding: 12px; border: 1px solid #e5e7eb;
       border-radius: 8px; margin-top: 6px; height: 150px;
     "></textarea>
@@ -645,7 +652,8 @@
     border: none; border-radius: 10px;
     font-size: 16px; font-weight: 700;
     cursor: pointer;
-  ">
+  "
+  id="submitBtn">
         Send Message
       </button>
 
@@ -783,6 +791,9 @@
 
     <p class="copyright">© 2025 Edu-Vision, Inc.</p>
   </footer>
+
+
+  <script src="contact.js"></script>
 
 </body>
 
